@@ -49,7 +49,7 @@ class OrderDetailsScreen extends StatelessWidget {
                   color: Colors.black,
                   fontSize: 22,
                   fontWeight: FontWeight.bold)),
-         // _buildEvaluationsOrder(context),
+          _buildEvaluationsOrder(context),
         ],
       ),
     );
