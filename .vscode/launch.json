@@ -1,0 +1,26 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "flutterfood",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutterfood (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "my_cli",
+            "cwd": "my_cli",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
