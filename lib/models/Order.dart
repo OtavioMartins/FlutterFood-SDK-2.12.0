@@ -22,22 +22,20 @@ class Order {
       this.foods,
       this.evaluations});
 
+      
+
   factory Order.fromJson(jsonData) {
 
     List<Food> _foodsApi = (jsonData['products'] as List)
         .map((food) => Food.fromJson(food))
         .toList();
 
-        print(jsonData.toString());
-/*
+
     List<Evaluation> _evaluationsApi = (jsonData['evaluations'] as List)
         .map((evaluation) => Evaluation.fromJson(evaluation))
         .toList();
-        */
         
-
-        
-        
+      
 
     return Order(
       identify: jsonData['identify'],
@@ -46,7 +44,7 @@ class Order {
       total: double.parse(jsonData['total'].toString()),
       comment: jsonData['comment'],
       foods: _foodsApi,
-      //evaluations: _evaluationsApi,
+      evaluations: _evaluationsApi,
     );
   }
 
